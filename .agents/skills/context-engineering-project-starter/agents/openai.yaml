@@ -1,0 +1,4 @@
+interface:
+  display_name: "Context Engineering Project Starter"
+  short_description: "Prepare AI-coding-ready project context, domain docs, and agent rules."
+  default_prompt: "Use this skill to turn a project idea into agent-friendly startup documentation, domain-specific guardrails, and coding-agent instruction files before implementation."

@@ -1,0 +1,6 @@
+# Aider configuration for {{PROJECT_NAME}}
+# Keep shared rules read-only in aider context.
+
+read:
+  - AGENTS.md
+  - CONVENTIONS.md

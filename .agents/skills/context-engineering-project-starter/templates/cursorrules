@@ -1,0 +1,5 @@
+# Legacy Cursor rules for {{PROJECT_NAME}}
+
+Prefer `.cursor/rules/*.mdc` for new Cursor projects. This file exists only for legacy compatibility.
+
+Follow `AGENTS.md` as the shared project instruction source. Keep work scoped to the current milestone, preserve security boundaries, and run documented quality gates before reporting completion.

@@ -1,0 +1,5 @@
+# Legacy Windsurf rules for {{PROJECT_NAME}}
+
+Prefer `.devin/rules/*.md` or `.windsurf/rules/*.md` for new projects. This file exists only for legacy compatibility.
+
+Follow `AGENTS.md` as the shared project instruction source. Keep work scoped, avoid duplicate systems, preserve security boundaries, and verify before reporting done.
