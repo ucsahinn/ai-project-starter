@@ -16,6 +16,24 @@
 
 Bu skill, ham proje fikrini Codex/Cursor/Claude Code/Windsurf/Continue/Copilot/Aider gibi agent'larin anlayacagi eksiksiz proje context'ine donusturur. Amac, agent'in baglamsiz kod yazmaya baslamasini engellemek ve urun hedefi, teknik sinirlar, guvenlik, test, kalite ve mimari kararlarin bastan net olmasini saglamaktir.
 
+## Enterprise Degerlendirme Yolu
+
+| Kanitlamak istedigin sey | Baslangic | Alacagin kanit |
+| --- | --- | --- |
+| Starter'in mevcut isi ezmeden ilerledigini | [Install guide](docs/INSTALL.md) ve [Usage guide](docs/USAGE.md) | Modlar, kopyalama yolu ve guvenli dosya uretme beklentileri. |
+| Uretilen context'in guvenlik ve kalite kapilari oldugunu | [Security model](docs/SECURITY_MODEL.md) | Secret handling, onay sinirlari, test beklentileri ve public-safe kurallar. |
+| Skill'in enterprise starter icin yeterli oldugunu | [Examples](docs/EXAMPLES.md) | SaaS, cybersecurity, API, web, mobile, desktop, data, internal-tool ve library/CLI desenleri. |
+| Public reponun paylasima uygun oldugunu | [Public repo checklist](docs/PUBLIC_REPO_CHECKLIST.md) | Commit, tag, release veya reuse oncesi sizinti onleme checklist'i. |
+
+## Guven Sinyalleri
+
+| Sinyal | Standart |
+| --- | --- |
+| Koddan once context | Skill, implementation baslamadan once urun, mimari, guvenlik, test, operasyon ve task context'i hazirlar. |
+| Mod kapili cikti | `PROMPT_ONLY`, `DOCS_ONLY`, `PLAN_ONLY`, `CREATE_FILES`, `AUDIT_CONTEXT` ve `REPAIR_CONTEXT` akisi acik tutar. |
+| Public-safe paket | Ornekler ve template'ler placeholder kullanir; credential, private prompt, musteri verisi ve local operator path tasimaz. |
+| Agent uyumlulugu | Cikti Codex, Claude Code, Cursor, Continue, Copilot, Devin/Windsurf, Aider ve benzer araclara uyumludur. |
+
 ## Neden Var?
 
 AI coding agent'lar guclu ama context yoksa proje hizla dagilir. Belirsiz "bunu kodla" istekleri duplicate modul, zayif guvenlik, belirsiz mimari ve scope creep uretir.

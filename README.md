@@ -16,6 +16,24 @@
 
 Context Engineering Project Starter helps turn a raw project idea into a complete documentation foundation before an AI coding agent starts writing code. It is built for Codex, Cursor, Claude Code, Windsurf/Devin, Continue, Copilot, Aider, and similar tools.
 
+## Enterprise Evaluator Path
+
+| If you need to prove... | Start with | Evidence you get |
+| --- | --- | --- |
+| The starter will not overwrite existing work by default | [Install guide](docs/INSTALL.md) and [Usage guide](docs/USAGE.md) | Modes, copy path, and safe materialization expectations. |
+| The generated context has security and quality gates | [Security model](docs/SECURITY_MODEL.md) | Secret handling, approval boundaries, testing expectations, and public-safe rules. |
+| The skill can support a real enterprise starter | [Examples](docs/EXAMPLES.md) | SaaS, cybersecurity, API, web, mobile, desktop, data, internal-tool, and library/CLI patterns. |
+| The public repository is safe to share | [Public repo checklist](docs/PUBLIC_REPO_CHECKLIST.md) | Leak-prevention checklist before commit, tag, release, or reuse. |
+
+## Trust Signals
+
+| Signal | Standard |
+| --- | --- |
+| Context before code | The skill prepares product, architecture, security, testing, operations, and task context before implementation starts. |
+| Mode-gated output | `PROMPT_ONLY`, `DOCS_ONLY`, `PLAN_ONLY`, `CREATE_FILES`, `AUDIT_CONTEXT`, and `REPAIR_CONTEXT` keep the workflow explicit. |
+| Public-safe package | Examples and templates use placeholders and avoid credentials, private prompts, customer data, and local operator paths. |
+| Agent interoperability | Output targets Codex, Claude Code, Cursor, Continue, Copilot, Devin/Windsurf, Aider, and similar tools without locking the project to one editor. |
+
 ## Why This Exists
 
 AI coding agents fail when the project has no durable context. Vague "build this" prompts often create duplicate modules, weak security, unclear architecture, and features outside the real goal.
