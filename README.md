@@ -16,7 +16,7 @@
 
 Context Engineering Project Starter helps turn a raw project idea into a complete documentation foundation before an AI coding agent starts writing code. It is built for Codex, Cursor, Claude Code, Windsurf/Devin, Continue, Copilot, Aider, and similar tools.
 
-## Enterprise Evaluator Path
+## 🧭 Enterprise Evaluator Path
 
 | If you need to prove... | Start with | Evidence you get |
 | --- | --- | --- |
@@ -25,7 +25,7 @@ Context Engineering Project Starter helps turn a raw project idea into a complet
 | The skill can support a real enterprise starter | [Examples](docs/EXAMPLES.md) | SaaS, cybersecurity, API, web, mobile, desktop, data, internal-tool, and library/CLI patterns. |
 | The public repository is safe to share | [Public repo checklist](docs/PUBLIC_REPO_CHECKLIST.md) | Leak-prevention checklist before commit, tag, release, or reuse. |
 
-## Trust Signals
+## ✅ Trust Signals
 
 | Signal | Standard |
 | --- | --- |
@@ -34,7 +34,7 @@ Context Engineering Project Starter helps turn a raw project idea into a complet
 | Public-safe package | Examples and templates use placeholders and avoid credentials, private prompts, customer data, and local operator paths. |
 | Agent interoperability | Output targets Codex, Claude Code, Cursor, Continue, Copilot, Devin/Windsurf, Aider, and similar tools without locking the project to one editor. |
 
-## Why This Exists
+## 🎯 Why This Exists
 
 AI coding agents fail when the project has no durable context. Vague "build this" prompts often create duplicate modules, weak security, unclear architecture, and features outside the real goal.
 
@@ -47,7 +47,7 @@ This repository packages a reusable Codex skill that creates or repairs:
 - domain starter packs for SaaS, cybersecurity, AI products, APIs, web, mobile, desktop, data products, internal tools, and library/CLI work,
 - agent instruction files such as `AGENTS.md`, `CLAUDE.md`, Cursor rules, Continue rules, Copilot instructions, and Codex context files.
 
-## Start Fast
+## ⚡ Start Fast
 
 | I want to... | Use this |
 | --- | --- |
@@ -58,7 +58,7 @@ This repository packages a reusable Codex skill that creates or repairs:
 | Check public repo safety | [Public repo checklist](docs/PUBLIC_REPO_CHECKLIST.md) |
 | Review security model | [Security model](docs/SECURITY_MODEL.md) |
 
-## What You Get
+## 🧩 What You Get
 
 | Capability | What it gives you |
 | --- | --- |
@@ -70,7 +70,7 @@ This repository packages a reusable Codex skill that creates or repairs:
 | Context audit/repair | detect weak, stale, duplicate, conflicting, or missing project context docs |
 | Template materializer | `scripts/create_starter.py` creates safe starter docs without overwriting by default |
 
-## Quick Start
+## 🚀 Quick Start
 
 Use the skill from this repository:
 
@@ -91,7 +91,7 @@ Ask for guardrails only:
 Use VIBE_GUARDRAILS mode. Prepare only the agent context and quality gates needed to keep this project from drifting during vibe coding.
 ```
 
-## Supported Modes
+## 🧰 Supported Modes
 
 - `PROMPT_ONLY`
 - `DOCS_ONLY`
@@ -103,7 +103,7 @@ Use VIBE_GUARDRAILS mode. Prepare only the agent context and quality gates neede
 - `VIBE_GUARDRAILS`
 - `RESEARCH_BACKED`
 
-## Repository Structure
+## 📁 Repository Structure
 
 ```text
 .
@@ -129,7 +129,7 @@ Use VIBE_GUARDRAILS mode. Prepare only the agent context and quality gates neede
 `-- RELEASE_NOTES.md
 ```
 
-## Public Safety Rules
+## 🛡️ Public Safety Rules
 
 This repository must not contain:
 
@@ -141,10 +141,10 @@ This repository must not contain:
 
 Before publishing, use [docs/PUBLIC_REPO_CHECKLIST.md](docs/PUBLIC_REPO_CHECKLIST.md).
 
-## Security
+## 🔐 Security
 
 Do not open public issues for vulnerabilities, leaked credentials, private prompts, or accidental disclosure. See [SECURITY.md](SECURITY.md).
 
-## License
+## ⚖️ License
 
 MIT. See [LICENSE](LICENSE).

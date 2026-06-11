@@ -16,7 +16,7 @@
 
 Bu skill, ham proje fikrini Codex/Cursor/Claude Code/Windsurf/Continue/Copilot/Aider gibi agent'larin anlayacagi eksiksiz proje context'ine donusturur. Amac, agent'in baglamsiz kod yazmaya baslamasini engellemek ve urun hedefi, teknik sinirlar, guvenlik, test, kalite ve mimari kararlarin bastan net olmasini saglamaktir.
 
-## Enterprise Degerlendirme Yolu
+## 🧭 Enterprise Degerlendirme Yolu
 
 | Kanitlamak istedigin sey | Baslangic | Alacagin kanit |
 | --- | --- | --- |
@@ -25,7 +25,7 @@ Bu skill, ham proje fikrini Codex/Cursor/Claude Code/Windsurf/Continue/Copilot/A
 | Skill'in enterprise starter icin yeterli oldugunu | [Examples](docs/EXAMPLES.md) | SaaS, cybersecurity, API, web, mobile, desktop, data, internal-tool ve library/CLI desenleri. |
 | Public reponun paylasima uygun oldugunu | [Public repo checklist](docs/PUBLIC_REPO_CHECKLIST.md) | Commit, tag, release veya reuse oncesi sizinti onleme checklist'i. |
 
-## Guven Sinyalleri
+## ✅ Guven Sinyalleri
 
 | Sinyal | Standart |
 | --- | --- |
@@ -34,7 +34,7 @@ Bu skill, ham proje fikrini Codex/Cursor/Claude Code/Windsurf/Continue/Copilot/A
 | Public-safe paket | Ornekler ve template'ler placeholder kullanir; credential, private prompt, musteri verisi ve local operator path tasimaz. |
 | Agent uyumlulugu | Cikti Codex, Claude Code, Cursor, Continue, Copilot, Devin/Windsurf, Aider ve benzer araclara uyumludur. |
 
-## Neden Var?
+## 🎯 Neden Var?
 
 AI coding agent'lar guclu ama context yoksa proje hizla dagilir. Belirsiz "bunu kodla" istekleri duplicate modul, zayif guvenlik, belirsiz mimari ve scope creep uretir.
 
@@ -47,7 +47,7 @@ Bu repo su ihtiyaclari paketler:
 - SaaS, cybersecurity, AI product, API, web, mobile, desktop, data product, internal tool ve library/CLI domain pack'leri,
 - `AGENTS.md`, `CLAUDE.md`, Cursor, Continue, Copilot, Devin/Windsurf, Aider ve Codex context dosyalari.
 
-## Hizli Basla
+## ⚡ Hizli Basla
 
 | Sunu istiyorum... | Kullan |
 | --- | --- |
@@ -58,7 +58,7 @@ Bu repo su ihtiyaclari paketler:
 | Public repo guvenligini kontrol etmek | [Public repo checklist](docs/PUBLIC_REPO_CHECKLIST.md) |
 | Guvenlik modelini okumak | [Security model](docs/SECURITY_MODEL.md) |
 
-## Ne Sunar?
+## 🧩 Ne Sunar?
 
 | Yetenek | Deger |
 | --- | --- |
@@ -70,7 +70,7 @@ Bu repo su ihtiyaclari paketler:
 | Context audit/repair | zayif, eski, duplicate, celiskili veya eksik context dokumanlarini bulma ve duzeltme |
 | Template materializer | `scripts/create_starter.py` ile guvenli starter doc seti olusturma |
 
-## Ornek Kullanim
+## 🚀 Ornek Kullanim
 
 ```text
 context-engineering-project-starter skillini CREATE_FILES + ENTERPRISE_STARTER modunda kullan.
@@ -83,7 +83,7 @@ Sadece vibe coding guardrail:
 VIBE_GUARDRAILS modunu kullan. Bu proje vibe coding sirasinda dagilmasin diye gerekli agent context ve quality gate dosyalarini hazirla.
 ```
 
-## Desteklenen Modlar
+## 🧰 Desteklenen Modlar
 
 - `PROMPT_ONLY`
 - `DOCS_ONLY`
@@ -95,7 +95,7 @@ VIBE_GUARDRAILS modunu kullan. Bu proje vibe coding sirasinda dagilmasin diye ge
 - `VIBE_GUARDRAILS`
 - `RESEARCH_BACKED`
 
-## Public Guvenlik Kurallari
+## 🛡️ Public Guvenlik Kurallari
 
 Bu repo sunlari icermemelidir:
 
@@ -107,6 +107,6 @@ Bu repo sunlari icermemelidir:
 
 Yayinlamadan once [docs/PUBLIC_REPO_CHECKLIST.md](docs/PUBLIC_REPO_CHECKLIST.md) kullanin.
 
-## Lisans
+## ⚖️ Lisans
 
 MIT. Detaylar icin [LICENSE](LICENSE).
