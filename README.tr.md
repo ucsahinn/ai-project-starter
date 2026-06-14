@@ -1,8 +1,15 @@
 # Context Engineering Project Starter
 
-> Kod yazmaya baslamadan once AI-agent uyumlu proje context'i, baslangic dokumantasyonu, domain guardrail'leri ve agent instruction dosyalari ureten Codex skill paketi.
+<p align="center">
+  <a href="README.de.md">🇩🇪 Deutsch</a> ·
+  <a href="README.es.md">🇪🇸 Español</a> ·
+  <a href="README.md">🇬🇧 English</a> ·
+  <a href="README.pt-BR.md">🇧🇷 Português (Brasil)</a> ·
+  <a href="README.tr.md">🇹🇷 Türkçe</a> ·
+  <a href="README.fr.md">🇫🇷 French</a>
+</p>
 
-[English](README.md) | [Turkce](README.tr.md)
+> Kod yazmaya baslamadan once AI-agent uyumlu proje context'i, baslangic dokumantasyonu, domain guardrail'leri ve agent instruction dosyalari ureten Codex skill paketi.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-111827)](LICENSE)
 [![Security Policy](https://img.shields.io/badge/security-policy-b91c1c)](SECURITY.md)

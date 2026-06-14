@@ -4,12 +4,12 @@
 
 <p align="center">
   🌐 <strong>Languages:</strong>
-  🇩🇪 Deutsch ·
-  🇪🇸 Español ·
+  <a href="README.de.md">🇩🇪 Deutsch</a> ·
+  <a href="README.es.md">🇪🇸 Español</a> ·
   <a href="README.md">🇬🇧 English</a> ·
-  🇧🇷 Português (Brasil) ·
+  <a href="README.pt-BR.md">🇧🇷 Português (Brasil)</a> ·
   <a href="README.tr.md">🇹🇷 Türkçe</a> ·
-  🇫🇷 French
+  <a href="README.fr.md">🇫🇷 French</a>
 </p>
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-111827)](LICENSE)
