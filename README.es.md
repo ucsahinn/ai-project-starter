@@ -1,62 +1,150 @@
-# Context Engineering Project Starter
+# &#129513; Context Engineering Project Starter - README completa en español
 
-<p align="center">
-  <a href="README.de.md">&#127465;&#127466; Deutsch</a> ? <a href="README.es.md">&#127466;&#127480; Espa&ntilde;ol</a> ? <a href="README.md">&#127468;&#127463; English</a> ? <a href="README.pt-BR.md">&#127463;&#127479; Portugu&ecirc;s (Brasil)</a> ? <a href="README.tr.md">&#127481;&#127479; T&uuml;rk&ccedil;e</a> ? <a href="README.fr.md">&#127467;&#127479; French</a>
-</p>
+[&#127468;&#127463; English](README.md) | [&#127465;&#127466; Deutsch](README.de.md) | [&#127466;&#127480; Español](README.es.md) | [&#127463;&#127479; Português (Brasil)](README.pt-BR.md) | [&#127481;&#127479; Türkçe](README.tr.md) | [&#127467;&#127479; Français](README.fr.md)
 
-Paquete de skill para Codex que crea briefs, especificaciones, arquitectura, tareas, guardrails e instrucciones de agente antes de codificar.
+> Este archivo es una portada completa en español, no un resumen corto. Cubre propósito, límites, uso, validación, seguridad y publicación.
+>
+> README canónico en inglés: [README.md](README.md)
 
-## Por que existe este repositorio
+Public starter for packaging context-engineering projects with docs, examples, safety model and install guidance.
 
-Paquete de skill para Codex que crea briefs, especificaciones, arquitectura, tareas, guardrails e instrucciones de agente antes de codificar.
+Empieza por el README canónico si necesitas la descripción inglesa más actual. Usa esta página cuando quieras el mismo contrato operativo en español.
 
-Esta portada localizada se mantiene para que el lector entienda el repositorio sin depender de una etiqueta de idioma corta. La referencia canonica profunda sigue en README.md; esta pagina contiene suficiente contexto para elegir el punto de entrada, el limite de seguridad y la verificacion correcta.
+## Estado y señales de confianza
 
-## Para quien es
+|Área | Detalle|
+|--- | ---|
+|Estado | Public repository: ucsahinn/context-engineering-project-starter|
+|Fuente de verdad | [README canónico en inglés](README.md)|
+|Usuarios | Codex users starting context-heavy projects.; Maintainers packaging reusable agent workflows.|
+|Validación | Docs map points to existing files.; AGENTS.md matches the intended project behavior.|
+|Seguridad | Documents project purpose, supported modes and safety boundaries.; Includes starter docs for install, usage, examples, skill structure and public repo checks.|
 
-Founders, equipos de producto y developers que quieren empezar AI coding con contexto duradero, no prompts improvisados.
+## Qué es este repositorio
 
-## Inicio rapido
+- A starter structure for context-engineering projects.
+- A public repo template for AGENTS.md, docs, examples, security and release notes.
+- A guide for progressive disclosure and reusable project knowledge.
+- A reference for turning local context work into a shareable public repo.
 
-| Si necesitas... | Abre |
-| --- | --- |
-| Usage guide | [docs/USAGE.md](docs/USAGE.md) |
-| Install guide | [docs/INSTALL.md](docs/INSTALL.md) |
-| Examples | [docs/EXAMPLES.md](docs/EXAMPLES.md) |
-| Skill structure | [docs/SKILL_STRUCTURE.md](docs/SKILL_STRUCTURE.md) |
-| Security model | [docs/SECURITY_MODEL.md](docs/SECURITY_MODEL.md) |
-| Public repo checklist | [docs/PUBLIC_REPO_CHECKLIST.md](docs/PUBLIC_REPO_CHECKLIST.md) |
+## Qué no es
+
+- Not an official standard.
+- Not a full application scaffold.
+- Not a place for private datasets, customer files or credentials.
+- Not a substitute for validating the generated project in its real target repo.
+
+## Para quién es
+
+- Codex users starting context-heavy projects.
+- Maintainers packaging reusable agent workflows.
+- Public repo authors who need a safe starter layout.
+- Reviewers checking documentation completeness and safety boundaries.
+
+## Inicio rápido
+
+1. Clona o actualiza el repositorio.
+2. Lee README, seguridad y el mapa de documentación.
+3. Ejecuta las validaciones adecuadas.
+4. Prepara solo los archivos cambiados de forma explícita.
+5. Antes de push o release, revisa remoto, secretos y enlaces otra vez.
+
+## Guía de decisión
+
+- Need reusable context -> put it in docs or references.
+- Need repo behavior instructions -> AGENTS.md.
+- Need examples -> keep them small, public and validated.
+- Need public release -> run checklist and secret scan first.
 
 ## Mapa del repositorio
 
-- .agents/skills/context-engineering-project-starter/SKILL.md - skill entrypoint
-- docs/ - usage, install, examples, structure and security
-- AGENTS.md - repo operating guidance
-- RELEASE_NOTES.md / CHANGELOG.md - public history
-- SECURITY.md - disclosure and safety rules
+|Ruta | Por qué importa|
+|--- | ---|
+|[docs/INSTALL.md](docs/INSTALL.md) | install path|
+|[docs/USAGE.md](docs/USAGE.md) | usage model|
+|[docs/EXAMPLES.md](docs/EXAMPLES.md) | example workflows|
+|[docs/SKILL_STRUCTURE.md](docs/SKILL_STRUCTURE.md) | skill and context layout|
+|[docs/PUBLIC_REPO_CHECKLIST.md](docs/PUBLIC_REPO_CHECKLIST.md) | public-readiness checklist|
+|[docs/SECURITY_MODEL.md](docs/SECURITY_MODEL.md) | safety model|
+|[AGENTS.md](AGENTS.md) | working agreement|
 
-## Validacion e higiene de release
+## Flujo de trabajo
 
-Antes de commit o publicacion, revisa links, Markdown, validacion existente del repo y Gitleaks.
+1. Clone the starter.
+2. Read the supported modes.
+3. Customize docs and examples to the target project.
+4. Keep detailed reusable context outside the shortest entrypoint.
+5. Run diff, link and secret checks before publication.
 
-Ruta recomendada de release/readiness:
+## Comandos y validación
 
-1. Revisar el README relevante y los documentos enlazados.
-2. Ejecutar la validacion del repositorio cuando exista un comando.
-3. Comprobar links Markdown y assets locales.
-4. Ejecutar Gitleaks o el secret scan configurado.
-5. Verificar origin/main despues del push antes de afirmar que la publicacion termino.
+Ejecuta estos comandos solo después de clonar el repositorio y entender qué escriben o verifican.
 
-## Limite de seguridad y alcance publico
+```powershell
+git diff --check
+gitleaks dir . --no-banner --redact
+git status --short --branch
+```
 
-Los archivos starter no deben sobrescribir trabajo existente. Datos privados, secretos y rutas locales quedan fuera de ejemplos y templates.
+## Lista de verificación
 
-## Contribucion y mantenimiento
+- Docs map points to existing files.
+- AGENTS.md matches the intended project behavior.
+- Examples are public-safe and not copied from private work.
+- Security model states what is out of scope.
+- Remote HEAD is verified after push.
 
-Mant?n las paginas localizadas alineadas con el README canonico cuando cambien el alcance, los pasos de instalacion, las reglas de release o los limites de seguridad. No agregues afirmaciones que no esten respaldadas por el repositorio, docs live del producto o evidencia publica de release.
+## Límite de seguridad
 
-## Estandar de completitud
+- Documents project purpose, supported modes and safety boundaries.
+- Includes starter docs for install, usage, examples, skill structure and public repo checks.
+- Keeps public-ready files visible for cloning and inspection.
+- Avoids private operational data and secrets.
 
-Este README localizado no es una nota corta. Explica proposito, entrada, superficies del repositorio, validacion, limite de seguridad y referencias canonicas.
+Public-safe rule: do not add secrets, tokens, cookies, private keys, private prompts, customer data, local-only auth files, generated logs, archives or build outputs unless the canonical README explicitly says they belong in the public repo.
 
-Referencia canonica: [README.md](README.md).
+## Higiene de release y publicación
+
+- Keep starter changes documentation-first unless scripts are intentionally added.
+- Do not publish generated private project data.
+- Update release notes when the public starter contract changes.
+- Verify remote after push.
+
+## Mantenimiento
+
+- Keep this localized README aligned with README.md when the repo contract changes.
+- Prefer factual repo links over marketing claims.
+- Do not invent install commands, metrics, users, releases or support promises.
+- If a command is version-sensitive, re-check it before documenting it.
+- When a localized file cannot be updated fully, leave a clear note instead of a partial translation.
+
+## Ruta de contribución
+
+- Open a focused change against the smallest set of files.
+- Read AGENTS.md or CONTRIBUTING.md when present before editing.
+- Run the repo validation commands listed above.
+- Review staged diffs explicitly before commit.
+- Use security disclosure paths instead of public issues for sensitive reports.
+
+## Definición de terminado
+
+Terminado significa: contenido completo, enlaces correctos, límites de seguridad claros, validación ejecutada, Git limpio y remote HEAD verificado después del push.
+
+|Recomendación | Por qué importa|
+|--- | ---|
+|Content | Public starter for packaging context-engineering projects with docs, examples, safety model and install guidance.|
+|Links | All referenced local files must exist and resolve from the repository root.|
+|Security | AGENTS.md matches the intended project behavior.|
+|Verification | Valida estructura, enlaces, Markdown, secretos, scripts relevantes y remote HEAD antes de afirmar que algo está publicado.|
+|Remote | After push, compare local HEAD with origin/main and GitHub remote HEAD.|
+
+## Enlaces importantes
+
+|Ruta | Por qué importa|
+|--- | ---|
+|[Canonical README](README.md) | README.md|
+|[Install docs](docs/INSTALL.md) | docs/INSTALL.md|
+|[Usage docs](docs/USAGE.md) | docs/USAGE.md|
+|[Examples](docs/EXAMPLES.md) | docs/EXAMPLES.md|
+|[Public repo checklist](docs/PUBLIC_REPO_CHECKLIST.md) | docs/PUBLIC_REPO_CHECKLIST.md|
+|[Security model](docs/SECURITY_MODEL.md) | docs/SECURITY_MODEL.md|
