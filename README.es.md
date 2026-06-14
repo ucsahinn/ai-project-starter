@@ -1,30 +1,62 @@
 # Context Engineering Project Starter
 
 <p align="center">
-  <a href="README.de.md">🇩🇪 Deutsch</a> ·
-  <a href="README.es.md">🇪🇸 Español</a> ·
-  <a href="README.md">🇬🇧 English</a> ·
-  <a href="README.pt-BR.md">🇧🇷 Português (Brasil)</a> ·
-  <a href="README.tr.md">🇹🇷 Türkçe</a> ·
-  <a href="README.fr.md">🇫🇷 French</a>
+  <a href="README.de.md">&#127465;&#127466; Deutsch</a> ? <a href="README.es.md">&#127466;&#127480; Espa&ntilde;ol</a> ? <a href="README.md">&#127468;&#127463; English</a> ? <a href="README.pt-BR.md">&#127463;&#127479; Portugu&ecirc;s (Brasil)</a> ? <a href="README.tr.md">&#127481;&#127479; T&uuml;rk&ccedil;e</a> ? <a href="README.fr.md">&#127467;&#127479; French</a>
 </p>
 
-Paquete de skill para Codex que prepara contexto de proyecto apto para agentes, documentación inicial, guardrails de dominio e instrucciones de agente antes de empezar a implementar.
+Paquete de skill para Codex que crea briefs, especificaciones, arquitectura, tareas, guardrails e instrucciones de agente antes de codificar.
 
-## Propósito
+## Por que existe este repositorio
 
-- convertir ideas crudas en contexto de producto, técnica, seguridad y pruebas
-- preparar `AGENTS.md`, briefs, especificaciones, planes y quality gates
-- dar contexto consistente a herramientas de AI coding en lugar de prompts sueltos
-- proteger trabajo existente y crear archivos solo en modos explícitos
+Paquete de skill para Codex que crea briefs, especificaciones, arquitectura, tareas, guardrails e instrucciones de agente antes de codificar.
 
-## Entrada Rápida
+Esta portada localizada se mantiene para que el lector entienda el repositorio sin depender de una etiqueta de idioma corta. La referencia canonica profunda sigue en README.md; esta pagina contiene suficiente contexto para elegir el punto de entrada, el limite de seguridad y la verificacion correcta.
 
-- [Uso](docs/USAGE.md)
-- [Instalación](docs/INSTALL.md)
-- [Ejemplos](docs/EXAMPLES.md)
-- [Estructura de skill](docs/SKILL_STRUCTURE.md)
-- [Modelo de seguridad](docs/SECURITY_MODEL.md)
-- [Checklist de repo público](docs/PUBLIC_REPO_CHECKLIST.md)
+## Para quien es
 
-La referencia completa está en [README.md](README.md).
+Founders, equipos de producto y developers que quieren empezar AI coding con contexto duradero, no prompts improvisados.
+
+## Inicio rapido
+
+| Si necesitas... | Abre |
+| --- | --- |
+| Usage guide | [docs/USAGE.md](docs/USAGE.md) |
+| Install guide | [docs/INSTALL.md](docs/INSTALL.md) |
+| Examples | [docs/EXAMPLES.md](docs/EXAMPLES.md) |
+| Skill structure | [docs/SKILL_STRUCTURE.md](docs/SKILL_STRUCTURE.md) |
+| Security model | [docs/SECURITY_MODEL.md](docs/SECURITY_MODEL.md) |
+| Public repo checklist | [docs/PUBLIC_REPO_CHECKLIST.md](docs/PUBLIC_REPO_CHECKLIST.md) |
+
+## Mapa del repositorio
+
+- .agents/skills/context-engineering-project-starter/SKILL.md - skill entrypoint
+- docs/ - usage, install, examples, structure and security
+- AGENTS.md - repo operating guidance
+- RELEASE_NOTES.md / CHANGELOG.md - public history
+- SECURITY.md - disclosure and safety rules
+
+## Validacion e higiene de release
+
+Antes de commit o publicacion, revisa links, Markdown, validacion existente del repo y Gitleaks.
+
+Ruta recomendada de release/readiness:
+
+1. Revisar el README relevante y los documentos enlazados.
+2. Ejecutar la validacion del repositorio cuando exista un comando.
+3. Comprobar links Markdown y assets locales.
+4. Ejecutar Gitleaks o el secret scan configurado.
+5. Verificar origin/main despues del push antes de afirmar que la publicacion termino.
+
+## Limite de seguridad y alcance publico
+
+Los archivos starter no deben sobrescribir trabajo existente. Datos privados, secretos y rutas locales quedan fuera de ejemplos y templates.
+
+## Contribucion y mantenimiento
+
+Mant?n las paginas localizadas alineadas con el README canonico cuando cambien el alcance, los pasos de instalacion, las reglas de release o los limites de seguridad. No agregues afirmaciones que no esten respaldadas por el repositorio, docs live del producto o evidencia publica de release.
+
+## Estandar de completitud
+
+Este README localizado no es una nota corta. Explica proposito, entrada, superficies del repositorio, validacion, limite de seguridad y referencias canonicas.
+
+Referencia canonica: [README.md](README.md).
