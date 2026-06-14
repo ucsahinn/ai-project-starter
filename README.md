@@ -2,7 +2,15 @@
 
 > A Codex skill package for preparing AI-coding-ready project context, starter documentation, domain guardrails, and agent instruction files before implementation starts.
 
-[English](README.md) | [Turkce](README.tr.md)
+<p align="center">
+  🌐 <strong>Languages:</strong>
+  🇩🇪 Deutsch ·
+  🇪🇸 Español ·
+  <a href="README.md">🇬🇧 English</a> ·
+  🇧🇷 Português (Brasil) ·
+  <a href="README.tr.md">🇹🇷 Türkçe</a> ·
+  🇫🇷 French
+</p>
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-111827)](LICENSE)
 [![Security Policy](https://img.shields.io/badge/security-policy-b91c1c)](SECURITY.md)
