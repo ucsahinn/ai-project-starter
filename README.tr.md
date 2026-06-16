@@ -30,7 +30,7 @@
 
 Bu skill, ham proje fikrini Codex/Cursor/Claude Code/Windsurf/Continue/Copilot/Aider gibi agent'larin anlayacagi eksiksiz proje context'ine donusturur. Amac, agent'in baglamsiz kod yazmaya baslamasini engellemek ve urun hedefi, teknik sinirlar, guvenlik, test, kalite ve mimari kararlarin bastan net olmasini saglamaktir.
 
-## 🧭 Enterprise Degerlendirme Yolu
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9ed.svg" alt="" aria-hidden="true" width="20"> Enterprise Degerlendirme Yolu
 
 | Kanitlamak istedigin sey | Baslangic | Alacagin kanit |
 | --- | --- | --- |
@@ -39,7 +39,7 @@ Bu skill, ham proje fikrini Codex/Cursor/Claude Code/Windsurf/Continue/Copilot/A
 | Skill'in enterprise starter icin yeterli oldugunu | [Examples](docs/EXAMPLES.md) | SaaS, cybersecurity, API, web, mobile, desktop, data, internal-tool ve library/CLI desenleri. |
 | Public reponun paylasima uygun oldugunu | [Public repo checklist](docs/PUBLIC_REPO_CHECKLIST.md) | Commit, tag, release veya reuse oncesi sizinti onleme checklist'i. |
 
-## ✅ Guven Sinyalleri
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2705.svg" alt="" aria-hidden="true" width="20"> Guven Sinyalleri
 
 | Sinyal | Standart |
 | --- | --- |
@@ -48,7 +48,7 @@ Bu skill, ham proje fikrini Codex/Cursor/Claude Code/Windsurf/Continue/Copilot/A
 | Public-safe paket | Ornekler ve template'ler placeholder kullanir; credential, private prompt, musteri verisi ve local operator path tasimaz. |
 | Agent uyumlulugu | Cikti Codex, Claude Code, Cursor, Continue, Copilot, Devin/Windsurf, Aider ve benzer araclara uyumludur. |
 
-## 🎯 Neden Var?
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3af.svg" alt="" aria-hidden="true" width="20"> Neden Var?
 
 AI coding agent'lar guclu ama context yoksa proje hizla dagilir. Belirsiz "bunu kodla" istekleri duplicate modul, zayif guvenlik, belirsiz mimari ve scope creep uretir.
 
@@ -61,7 +61,7 @@ Bu repo su ihtiyaclari paketler:
 - SaaS, cybersecurity, AI product, API, web, mobile, desktop, data product, internal tool ve library/CLI domain pack'leri,
 - `AGENTS.md`, `CLAUDE.md`, Cursor, Continue, Copilot, Devin/Windsurf, Aider ve Codex context dosyalari.
 
-## ⚡ Hizli Basla
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/26a1.svg" alt="" aria-hidden="true" width="20"> Hizli Basla
 
 | Sunu istiyorum... | Kullan |
 | --- | --- |
@@ -72,7 +72,7 @@ Bu repo su ihtiyaclari paketler:
 | Public repo guvenligini kontrol etmek | [Public repo checklist](docs/PUBLIC_REPO_CHECKLIST.md) |
 | Guvenlik modelini okumak | [Security model](docs/SECURITY_MODEL.md) |
 
-## 🧩 Ne Sunar?
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9e9.svg" alt="" aria-hidden="true" width="20"> Ne Sunar?
 
 | Yetenek | Deger |
 | --- | --- |
@@ -84,7 +84,7 @@ Bu repo su ihtiyaclari paketler:
 | Context audit/repair | zayif, eski, duplicate, celiskili veya eksik context dokumanlarini bulma ve duzeltme |
 | Template materializer | `scripts/create_starter.py` ile guvenli starter doc seti olusturma |
 
-## 🚀 Ornek Kullanim
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f680.svg" alt="" aria-hidden="true" width="20"> Ornek Kullanim
 
 ```text
 ai-project-starter skillini CREATE_FILES + ENTERPRISE_STARTER modunda kullan.
@@ -97,7 +97,7 @@ Sadece vibe coding guardrail:
 VIBE_GUARDRAILS modunu kullan. Bu proje vibe coding sirasinda dagilmasin diye gerekli agent context ve quality gate dosyalarini hazirla.
 ```
 
-## 🧰 Desteklenen Modlar
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9f0.svg" alt="" aria-hidden="true" width="20"> Desteklenen Modlar
 
 - `PROMPT_ONLY`
 - `DOCS_ONLY`
@@ -109,7 +109,7 @@ VIBE_GUARDRAILS modunu kullan. Bu proje vibe coding sirasinda dagilmasin diye ge
 - `VIBE_GUARDRAILS`
 - `RESEARCH_BACKED`
 
-## 🛡️ Public Guvenlik Kurallari
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f6e1.svg" alt="" aria-hidden="true" width="20"> Public Guvenlik Kurallari
 
 Bu repo sunlari icermemelidir:
 
@@ -121,6 +121,6 @@ Bu repo sunlari icermemelidir:
 
 Yayinlamadan once [docs/PUBLIC_REPO_CHECKLIST.md](docs/PUBLIC_REPO_CHECKLIST.md) kullanin.
 
-## ⚖️ Lisans
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2696.svg" alt="" aria-hidden="true" width="20"> Lisans
 
 MIT. Detaylar icin [LICENSE](LICENSE).
