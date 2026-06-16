@@ -24,12 +24,12 @@
     <td width="50%" valign="top">
       <h3><img src="https://flagcdn.com/w20/gb.png" alt="English" width="20"> English welcome</h3>
       <p>AI Project Starter prepares project context, PRDs, architecture notes, guardrails, and agent instruction files before an AI coding agent starts implementation.</p>
-      <p><strong>Start here:</strong> [Usage guide](docs/USAGE.md) shows the supported modes.</p>
+      <p><strong>Start here:</strong> <a href="docs/USAGE.md">Usage guide</a> shows the supported modes.</p>
     </td>
     <td width="50%" valign="top">
-      <h3><img src="https://flagcdn.com/w20/tr.png" alt="Turkce" width="20"> T&#252;rk&#231;e kar&#351;&#305;lama</h3>
-      <p>AI Project Starter, AI kodlama ajani uygulamaya baslamadan once proje contexti, PRD, mimari notlar, guardrailler ve ajan talimat dosyalari hazirlar.</p>
-      <p><strong>Buradan ba&#351;la:</strong> [README.tr.md](README.tr.md) Turkce proje baslatma akisini toplar.</p>
+      <h3><img src="https://flagcdn.com/w20/tr.png" alt="Türkçe" width="20"> Türkçe karşılama</h3>
+      <p>AI ile kod yazmaya başlamadan önce projenin brief'ini, PRD'sini, mimarisini, risklerini ve ajan talimatlarını toparlamak için hazırladığım başlangıç seti. Koddan önce zemini netleştirmek isteyen projeler için.</p>
+      <p><strong>Buradan başla:</strong> Türkçe başlangıç için <a href="README.tr.md">README.tr.md</a>; modlar ve kullanım akışı için <a href="docs/USAGE.md">USAGE</a>.</p>
     </td>
   </tr>
 </table>
