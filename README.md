@@ -18,6 +18,23 @@
   <a href="README.fr.md"><img src="https://flagcdn.com/w20/fr.png" alt="Fran&#231;ais" width="20"></a>
 </p>
 
+<!-- bilingual-welcome:start -->
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><img src="https://flagcdn.com/w20/gb.png" alt="English" width="20"> English welcome</h3>
+      <p>AI Project Starter prepares project context, PRDs, architecture notes, guardrails, and agent instruction files before an AI coding agent starts implementation.</p>
+      <p><strong>Start here:</strong> [Usage guide](docs/USAGE.md) shows the supported modes.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><img src="https://flagcdn.com/w20/tr.png" alt="Turkce" width="20"> T&#252;rk&#231;e kar&#351;&#305;lama</h3>
+      <p>AI Project Starter, AI kodlama ajani uygulamaya baslamadan once proje contexti, PRD, mimari notlar, guardrailler ve ajan talimat dosyalari hazirlar.</p>
+      <p><strong>Buradan ba&#351;la:</strong> [README.tr.md](README.tr.md) Turkce proje baslatma akisini toplar.</p>
+    </td>
+  </tr>
+</table>
+<!-- bilingual-welcome:end -->
+
 [![License: MIT](https://img.shields.io/badge/license-MIT-111827)](LICENSE)
 [![Security Policy](https://img.shields.io/badge/security-policy-b91c1c)](SECURITY.md)
 [![Docs](https://img.shields.io/badge/docs-ready-2563eb)](docs/USAGE.md)
