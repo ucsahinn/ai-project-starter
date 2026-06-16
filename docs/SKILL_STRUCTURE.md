@@ -1,7 +1,7 @@
 # Skill Structure
 
 ```text
-.agents/skills/context-engineering-project-starter/
+.agents/skills/ai-project-starter/
 |-- SKILL.md
 |-- agents/
 |   `-- openai.yaml

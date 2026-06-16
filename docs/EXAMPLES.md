@@ -3,7 +3,7 @@
 ## 1. Enterprise SaaS Cybersecurity Starter
 
 ```text
-Use context-engineering-project-starter in CREATE_FILES + ENTERPRISE_STARTER mode.
+Use ai-project-starter in CREATE_FILES + ENTERPRISE_STARTER mode.
 
 Project idea:
 Tenant-based SaaS cybersecurity platform for vulnerability triage, RBAC, audit logs, secure evidence handling, AI-assisted remediation planning, and executive reporting.

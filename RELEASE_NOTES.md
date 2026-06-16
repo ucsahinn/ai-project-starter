@@ -2,7 +2,7 @@
 
 ## v0.1.0 - Initial Public-Ready Package
 
-Initial release candidate for Context Engineering Project Starter.
+Initial release candidate for AI Project Starter.
 
 Highlights:
 

@@ -4,11 +4,11 @@
 
 ### Added
 
-- Initial `context-engineering-project-starter` Codex skill.
+- Initial `ai-project-starter` Codex skill.
 - Progressive-disclosure references for context engineering, vibe coding, project docs, agent instruction files, output modes, quality rubric, domain starter packs, and source map.
 - Template set for core project docs, enterprise docs, agent adapters, ADRs, SaaS, cybersecurity, AI product, API, web, mobile, desktop, data, internal tool, and library/CLI work.
 - `scripts/create_starter.py` to materialize safe starter document sets from bundled templates.
-- Public repo documentation modeled after the `codex-enterprise-prompt-architect` repository.
+- Public repo documentation modeled after the renamed `prompt-architect` repository pattern.
 
 ### Security
 

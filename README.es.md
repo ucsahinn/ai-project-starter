@@ -1,4 +1,4 @@
-# &#129513; Context Engineering Project Starter - README completa en español
+# &#129513; AI Project Starter - README completa en español
 
 [&#127468;&#127463; English](README.md) | [&#127465;&#127466; Deutsch](README.de.md) | [&#127466;&#127480; Español](README.es.md) | [&#127463;&#127479; Português (Brasil)](README.pt-BR.md) | [&#127481;&#127479; Türkçe](README.tr.md) | [&#127467;&#127479; Français](README.fr.md)
 
@@ -14,7 +14,7 @@ Empieza por el README canónico si necesitas la descripción inglesa más actual
 
 |Área | Detalle|
 |--- | ---|
-|Estado | Public repository: ucsahinn/context-engineering-project-starter|
+|Estado | Public repository: ucsahinn/ai-project-starter|
 |Fuente de verdad | [README canónico en inglés](README.md)|
 |Usuarios | Codex users starting context-heavy projects.; Maintainers packaging reusable agent workflows.|
 |Validación | Docs map points to existing files.; AGENTS.md matches the intended project behavior.|
