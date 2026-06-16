@@ -24,12 +24,7 @@ Contributions are welcome when they improve context engineering quality, source 
 Run:
 
 ```sh
-python C:\Users\ulasc\.codex\skills\.system\skill-creator\scripts\quick_validate.py .agents\skills\context-engineering-project-starter
+npm run check
 ```
 
-Also run:
-
-```sh
-rg -n "TODO|\[TODO" .agents\skills\context-engineering-project-starter
-rg -n "[^\x00-\x7F]" .agents\skills\context-engineering-project-starter
-```
+`npm run check` includes repository structure, skill metadata, public-safety, legacy-name, and placeholder scans.

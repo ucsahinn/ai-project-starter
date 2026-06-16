@@ -1,4 +1,10 @@
-# Context Engineering Project Starter
+# AI Project Starter
+
+<p align="center">
+  <img src="assets/icon.svg" alt="AI Project Starter ikonu" width="120" />
+  <br />
+  <img src="assets/banner.svg" alt="Brief, PRD, mimari, ajan kuralları ve kalite kapılarını gösteren AI Project Starter banner görseli" width="100%" />
+</p>
 
 <p align="center">
   <a href="README.de.md">🇩🇪</a> ·
@@ -58,7 +64,7 @@ Bu repo su ihtiyaclari paketler:
 
 | Sunu istiyorum... | Kullan |
 | --- | --- |
-| Yeni AI-coded projeyi guvenli baslatmak | [Skill entrypoint](.agents/skills/context-engineering-project-starter/SKILL.md) |
+| Yeni AI-coded projeyi guvenli baslatmak | [Skill entrypoint](.agents/skills/ai-project-starter/SKILL.md) |
 | Modlari ve ornekleri gormek | [Usage guide](docs/USAGE.md) |
 | Skill'i kurmak/kopyalamak | [Install guide](docs/INSTALL.md) |
 | Skill yapisini incelemek | [Skill structure](docs/SKILL_STRUCTURE.md) |
@@ -80,7 +86,7 @@ Bu repo su ihtiyaclari paketler:
 ## 🚀 Ornek Kullanim
 
 ```text
-context-engineering-project-starter skillini CREATE_FILES + ENTERPRISE_STARTER modunda kullan.
+ai-project-starter skillini CREATE_FILES + ENTERPRISE_STARTER modunda kullan.
 Proje fikri: Tenant bazli takimlar, RBAC, audit log, AI destekli remediation planlama ve guvenli raporlama iceren SaaS siber guvenlik platformu.
 ```
 

@@ -1,6 +1,12 @@
-# Context Engineering Project Starter
+# AI Project Starter
 
 > A Codex skill package for preparing AI-coding-ready project context, starter documentation, domain guardrails, and agent instruction files before implementation starts.
+
+<p align="center">
+  <img src="assets/icon.svg" alt="AI Project Starter icon" width="120" />
+  <br />
+  <img src="assets/banner.svg" alt="AI Project Starter banner showing brief, PRD, architecture, agent rules, and quality gates" width="100%" />
+</p>
 
 <p align="center">
   🌐 <strong>Languages:</strong>
@@ -16,13 +22,14 @@
 [![Security Policy](https://img.shields.io/badge/security-policy-b91c1c)](SECURITY.md)
 [![Docs](https://img.shields.io/badge/docs-ready-2563eb)](docs/USAGE.md)
 [![Public Safe](https://img.shields.io/badge/public--safe-checklist-7c3aed)](docs/PUBLIC_REPO_CHECKLIST.md)
+[![Validate](https://github.com/ucsahinn/ai-project-starter/actions/workflows/validate.yml/badge.svg)](https://github.com/ucsahinn/ai-project-starter/actions/workflows/validate.yml)
 
 - **Status:** initial public-ready skill package
 - **License:** MIT
 - **Project type:** Markdown-based Codex skill package for context engineering and project starter documentation
 - **Note:** Independent community project. Not affiliated with, endorsed by, or sponsored by OpenAI.
 
-Context Engineering Project Starter helps turn a raw project idea into a complete documentation foundation before an AI coding agent starts writing code. It is built for Codex, Cursor, Claude Code, Windsurf/Devin, Continue, Copilot, Aider, and similar tools.
+AI Project Starter helps turn a raw project idea into a complete documentation foundation before an AI coding agent starts writing code. It is built for Codex, Cursor, Claude Code, Windsurf/Devin, Continue, Copilot, Aider, and similar tools.
 
 ## 🧭 Enterprise Evaluator Path
 
@@ -59,11 +66,13 @@ This repository packages a reusable Codex skill that creates or repairs:
 
 | I want to... | Use this |
 | --- | --- |
-| Start a new AI-coded project safely | [Skill entrypoint](.agents/skills/context-engineering-project-starter/SKILL.md) |
+| Start a new AI-coded project safely | [Skill entrypoint](.agents/skills/ai-project-starter/SKILL.md) |
 | Understand modes and examples | [Usage guide](docs/USAGE.md) |
 | Install/copy the skill | [Install guide](docs/INSTALL.md) |
 | Review file structure | [Skill structure](docs/SKILL_STRUCTURE.md) |
 | Check public repo safety | [Public repo checklist](docs/PUBLIC_REPO_CHECKLIST.md) |
+| Prepare GitHub metadata | [GitHub settings](docs/GITHUB_SETTINGS.md) |
+| Improve discoverability | [SEO and discoverability](docs/SEO.md) |
 | Review security model | [Security model](docs/SECURITY_MODEL.md) |
 
 ## 🧩 What You Get
@@ -83,13 +92,13 @@ This repository packages a reusable Codex skill that creates or repairs:
 Use the skill from this repository:
 
 ```text
-Use the context-engineering-project-starter skill to prepare project starter docs for: [your project idea]
+Use the ai-project-starter skill to prepare project starter docs for: [your project idea]
 ```
 
 Create files for an enterprise SaaS cybersecurity product:
 
 ```text
-Use the context-engineering-project-starter skill in CREATE_FILES + ENTERPRISE_STARTER mode.
+Use the ai-project-starter skill in CREATE_FILES + ENTERPRISE_STARTER mode.
 Project idea: A SaaS cybersecurity platform for vulnerability triage, tenant-based teams, RBAC, audit logs, AI-assisted remediation planning, and secure reporting.
 ```
 
@@ -115,7 +124,7 @@ Use VIBE_GUARDRAILS mode. Prepare only the agent context and quality gates neede
 
 ```text
 .
-|-- .agents/skills/context-engineering-project-starter/
+|-- .agents/skills/ai-project-starter/
 |   |-- SKILL.md
 |   |-- agents/openai.yaml
 |   |-- references/
@@ -127,6 +136,8 @@ Use VIBE_GUARDRAILS mode. Prepare only the agent context and quality gates neede
 |   |-- EXAMPLES.md
 |   |-- SKILL_STRUCTURE.md
 |   |-- PUBLIC_REPO_CHECKLIST.md
+|   |-- SEO.md
+|   |-- GITHUB_SETTINGS.md
 |   |-- SECURITY_MODEL.md
 |   `-- ROADMAP.md
 |-- README.md

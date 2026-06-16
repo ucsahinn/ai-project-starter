@@ -1,4 +1,4 @@
-# Context Engineering Project Starter Operating Rules
+# AI Project Starter Operating Rules
 
 ## Mission
 
@@ -8,7 +8,7 @@ This repository maintains a public Codex skill for creating AI-coding-ready proj
 
 1. Current user request.
 2. Current repository files.
-3. `.agents/skills/context-engineering-project-starter/SKILL.md`.
+3. `.agents/skills/ai-project-starter/SKILL.md`.
 4. Skill references and templates.
 5. Official provider documentation for current tool behavior.
 6. Public repo docs in `docs/`.
@@ -34,9 +34,7 @@ This repository maintains a public Codex skill for creating AI-coding-ready proj
 Run after skill edits:
 
 ```sh
-python C:\Users\ulasc\.codex\skills\.system\skill-creator\scripts\quick_validate.py .agents\skills\context-engineering-project-starter
-rg -n "TODO|\[TODO" .agents\skills\context-engineering-project-starter
-rg -n "[^\x00-\x7F]" .agents\skills\context-engineering-project-starter
+npm run check
 ```
 
 Before commit or push, inspect `git status --short`, stage explicit files, review `git diff --cached`, and run a secret scan when available.

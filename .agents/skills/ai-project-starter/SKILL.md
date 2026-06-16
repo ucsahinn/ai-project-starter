@@ -1,11 +1,9 @@
 ---
-name: context-engineering-project-starter
+name: ai-project-starter
 description: Use when the user wants to prepare project-specific context engineering documents, AI coding agent instruction files, project starter Markdown files, vibe coding guardrails, PRD/TDD/architecture/security/testing docs, AGENTS.md/CLAUDE.md/Cursor/Windsurf/Continue/Copilot context files, or a complete AI-coding-ready documentation foundation before starting a new software project. Also use to audit or repair existing project context docs, prevent AI slop, scope creep, duplicate code, unsafe shortcuts, and architecture drift during AI-assisted or vibe coding work.
-metadata:
-  short-description: Build AI-coding-ready project context and starter docs
 ---
 
-# Context Engineering Project Starter
+# AI Project Starter
 
 ## Purpose
 

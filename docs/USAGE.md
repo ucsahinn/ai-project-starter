@@ -3,7 +3,7 @@
 ## Core Request
 
 ```text
-Use the context-engineering-project-starter skill.
+Use the ai-project-starter skill.
 Project idea: [describe the product].
 Mode: CREATE_FILES.
 Quality: enterprise starter.
@@ -41,7 +41,7 @@ Use one or more:
 ## Good Example
 
 ```text
-Use context-engineering-project-starter in CREATE_FILES + ENTERPRISE_STARTER + VIBE_GUARDRAILS mode.
+Use ai-project-starter in CREATE_FILES + ENTERPRISE_STARTER + VIBE_GUARDRAILS mode.
 
 Project idea:
 A SaaS cybersecurity product for small security teams. It imports scanner findings, groups them by tenant, assigns remediation tasks, uses AI to draft safe remediation plans, supports RBAC and audit logs, and produces executive reports.

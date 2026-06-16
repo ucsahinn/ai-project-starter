@@ -1,0 +1,26 @@
+# AI Project Starter
+
+AI Project Starter is a documentation-first Codex skill package for preparing AI-coded project context, guardrails, and agent instruction files before implementation starts.
+
+Primary entrypoints:
+- README.md
+- .agents/skills/ai-project-starter/SKILL.md
+- .agents/skills/ai-project-starter/scripts/create_starter.py
+- docs/USAGE.md
+- docs/EXAMPLES.md
+- docs/SKILL_STRUCTURE.md
+- docs/SEO.md
+- docs/GITHUB_SETTINGS.md
+
+Validation:
+- npm run check
+- git diff --check
+- gitleaks detect --redact --no-banner --no-git --verbose
+
+Safety:
+- Do not store secrets, private prompts, customer data, proprietary project details, local logs, screenshots, or private URLs.
+- Generated project docs should preserve assumptions, non-goals, risks, decisions, validation, and open questions.
+- Publishing, push, release, and GitHub settings changes require explicit human approval.
+
+Legacy identity:
+- context-engineering-project-starter is the previous name and should appear only in compatibility, history, or redirect notes.

@@ -1,0 +1,36 @@
+{
+  "name": "ai-project-starter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Documentation-first starter kit for AI-coded projects, project context, guardrails, and agent instruction files.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ucsahinn/ai-project-starter.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "check": "npm run validate",
+    "validate": "node scripts/validate-ai-project-starter.mjs"
+  },
+  "keywords": [
+    "ai-project-starter",
+    "project-template",
+    "context-engineering",
+    "ai-coding",
+    "ai-agents",
+    "agent-instructions",
+    "codex",
+    "cursor",
+    "claude-code",
+    "documentation",
+    "developer-tools",
+    "security-guardrails",
+    "vibe-coding",
+    "starter-template",
+    "prompt-engineering"
+  ]
+}
