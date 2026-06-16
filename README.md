@@ -66,6 +66,7 @@ AI Project Starter helps turn a raw project idea into a complete documentation f
 | Mode-gated output | `PROMPT_ONLY`, `DOCS_ONLY`, `PLAN_ONLY`, `CREATE_FILES`, `AUDIT_CONTEXT`, and `REPAIR_CONTEXT` keep the workflow explicit. |
 | Public-safe package | Examples and templates use placeholders and avoid credentials, private prompts, customer data, and local operator paths. |
 | Agent interoperability | Output targets Codex, Claude Code, Cursor, Continue, Copilot, Devin/Windsurf, Aider, and similar tools without locking the project to one editor. |
+| Generator smoke test | `npm run check` validates repository structure and dry-runs the starter materializer without writing files. |
 
 ## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3af.svg" alt="" aria-hidden="true" width="20"> Why This Exists
 
@@ -177,6 +178,17 @@ This repository must not contain:
 - unredacted logs, screenshots, local paths, or personal notes.
 
 Before publishing, use [docs/PUBLIC_REPO_CHECKLIST.md](docs/PUBLIC_REPO_CHECKLIST.md).
+
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2705.svg" alt="" aria-hidden="true" width="20"> Validation
+
+```sh
+npm run check
+git diff --check
+gitleaks dir . --no-banner --redact
+git status --short --branch
+```
+
+`npm run check` runs the repository validator and a dry-run smoke test for `.agents/skills/ai-project-starter/scripts/create_starter.py`.
 
 ## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f510.svg" alt="" aria-hidden="true" width="20"> Security
 

@@ -27,4 +27,4 @@ Run:
 npm run check
 ```
 
-`npm run check` includes repository structure, skill metadata, public-safety, legacy-name, and placeholder scans.
+`npm run check` includes repository structure, skill metadata, public-safety, legacy-name, localized README residue checks, placeholder scans, and the starter materializer dry-run smoke test.

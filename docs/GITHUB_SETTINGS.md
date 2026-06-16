@@ -28,4 +28,6 @@ git diff --check
 gitleaks detect --redact --no-banner --no-git --verbose
 ```
 
+`npm run check` includes the repository validator and a dry-run starter materializer smoke test. It must pass before changing GitHub metadata, tagging, pushing, or publishing release notes.
+
 GitHub CLI metadata updates require a valid authenticated `gh` session. Do not store tokens in this repository.

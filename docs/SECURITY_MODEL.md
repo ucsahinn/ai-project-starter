@@ -17,7 +17,7 @@ This repository provides documentation and a Codex skill. The main security risk
 - No-overwrite default in `scripts/create_starter.py`.
 - Skill rules requiring assumptions, source order, approval gates, and no-secret handling.
 - Public repo checklist before push.
-- Skill validator and TODO/encoding checks before publication.
+- Skill validator, localized README residue checks, starter materializer dry-run smoke test, and TODO/encoding checks before publication.
 
 ## Approval Gates
 

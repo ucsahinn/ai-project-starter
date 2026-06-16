@@ -16,7 +16,7 @@
   <a href="README.fr.md"><img src="https://flagcdn.com/w20/fr.png" alt="Fran&#231;ais" width="20"></a>
 </p>
 
-> Kod yazmaya baslamadan once AI-agent uyumlu proje context'i, baslangic dokumantasyonu, domain guardrail'leri ve agent instruction dosyalari ureten Codex skill paketi.
+> Kod yazmaya başlamadan önce AI-agent uyumlu proje context'i, başlangıç dokümantasyonu, domain guardrail'leri ve agent instruction dosyaları üreten Codex skill paketi.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-111827)](LICENSE)
 [![Security Policy](https://img.shields.io/badge/security-policy-b91c1c)](SECURITY.md)
@@ -25,76 +25,77 @@
 
 - **Durum:** ilk public-ready skill paketi
 - **Lisans:** MIT
-- **Proje tipi:** context engineering ve proje baslangic dokumantasyonu icin Markdown tabanli Codex skill paketi
-- **Not:** Bagimsiz topluluk projesidir. OpenAI ile bagli, onayli veya sponsorlu degildir.
+- **Proje tipi:** context engineering ve proje başlangıç dokümantasyonu için Markdown tabanlı Codex skill paketi
+- **Not:** Bağımsız topluluk projesidir. OpenAI ile bağlı, onaylı veya sponsorlu değildir.
 
-Bu skill, ham proje fikrini Codex/Cursor/Claude Code/Windsurf/Continue/Copilot/Aider gibi agent'larin anlayacagi eksiksiz proje context'ine donusturur. Amac, agent'in baglamsiz kod yazmaya baslamasini engellemek ve urun hedefi, teknik sinirlar, guvenlik, test, kalite ve mimari kararlarin bastan net olmasini saglamaktir.
+Bu skill, ham proje fikrini Codex, Cursor, Claude Code, Windsurf, Continue, Copilot, Aider ve benzeri agent'ların anlayacağı eksiksiz proje context'ine dönüştürür. Amaç, agent'ın bağlamsız kod yazmaya başlamasını engellemek ve ürün hedefi, teknik sınırlar, güvenlik, test, kalite ve mimari kararları baştan netleştirmektir.
 
-## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9ed.svg" alt="" aria-hidden="true" width="20"> Enterprise Degerlendirme Yolu
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9ed.svg" alt="" aria-hidden="true" width="20"> Enterprise Değerlendirme Yolu
 
-| Kanitlamak istedigin sey | Baslangic | Alacagin kanit |
+| Kanıtlamak istediğin şey | Başlangıç | Alacağın kanıt |
 | --- | --- | --- |
-| Starter'in mevcut isi ezmeden ilerledigini | [Install guide](docs/INSTALL.md) ve [Usage guide](docs/USAGE.md) | Modlar, kopyalama yolu ve guvenli dosya uretme beklentileri. |
-| Uretilen context'in guvenlik ve kalite kapilari oldugunu | [Security model](docs/SECURITY_MODEL.md) | Secret handling, onay sinirlari, test beklentileri ve public-safe kurallar. |
-| Skill'in enterprise starter icin yeterli oldugunu | [Examples](docs/EXAMPLES.md) | SaaS, cybersecurity, API, web, mobile, desktop, data, internal-tool ve library/CLI desenleri. |
-| Public reponun paylasima uygun oldugunu | [Public repo checklist](docs/PUBLIC_REPO_CHECKLIST.md) | Commit, tag, release veya reuse oncesi sizinti onleme checklist'i. |
+| Starter mevcut işi ezmeden ilerliyor mu? | [Install guide](docs/INSTALL.md) ve [Usage guide](docs/USAGE.md) | Modlar, kopyalama yolu ve güvenli dosya üretme beklentileri. |
+| Üretilen context güvenlik ve kalite kapıları içeriyor mu? | [Security model](docs/SECURITY_MODEL.md) | Secret handling, onay sınırları, test beklentileri ve public-safe kurallar. |
+| Skill enterprise starter için yeterli mi? | [Examples](docs/EXAMPLES.md) | SaaS, cybersecurity, API, web, mobile, desktop, data, internal-tool ve library/CLI desenleri. |
+| Public repo paylaşmaya uygun mu? | [Public repo checklist](docs/PUBLIC_REPO_CHECKLIST.md) | Commit, tag, release veya reuse öncesi sızıntı önleme checklist'i. |
 
-## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2705.svg" alt="" aria-hidden="true" width="20"> Guven Sinyalleri
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2705.svg" alt="" aria-hidden="true" width="20"> Güven Sinyalleri
 
 | Sinyal | Standart |
 | --- | --- |
-| Koddan once context | Skill, implementation baslamadan once urun, mimari, guvenlik, test, operasyon ve task context'i hazirlar. |
-| Mod kapili cikti | `PROMPT_ONLY`, `DOCS_ONLY`, `PLAN_ONLY`, `CREATE_FILES`, `AUDIT_CONTEXT` ve `REPAIR_CONTEXT` akisi acik tutar. |
-| Public-safe paket | Ornekler ve template'ler placeholder kullanir; credential, private prompt, musteri verisi ve local operator path tasimaz. |
-| Agent uyumlulugu | Cikti Codex, Claude Code, Cursor, Continue, Copilot, Devin/Windsurf, Aider ve benzer araclara uyumludur. |
+| Koddan önce context | Skill, implementation başlamadan önce ürün, mimari, güvenlik, test, operasyon ve task context'i hazırlar. |
+| Mod kapılı çıktı | `PROMPT_ONLY`, `DOCS_ONLY`, `PLAN_ONLY`, `CREATE_FILES`, `AUDIT_CONTEXT` ve `REPAIR_CONTEXT` akışı açık tutar. |
+| Public-safe paket | Örnekler ve template'ler placeholder kullanır; credential, private prompt, müşteri verisi ve local operator path taşımaz. |
+| Agent uyumluluğu | Çıktı Codex, Claude Code, Cursor, Continue, Copilot, Devin/Windsurf, Aider ve benzer araçlara uyumludur. |
+| Starter smoke testi | `npm run check`, repo yapısını ve starter materializer dry-run akışını birlikte doğrular. |
 
 ## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3af.svg" alt="" aria-hidden="true" width="20"> Neden Var?
 
-AI coding agent'lar guclu ama context yoksa proje hizla dagilir. Belirsiz "bunu kodla" istekleri duplicate modul, zayif guvenlik, belirsiz mimari ve scope creep uretir.
+AI coding agent'lar güçlüdür ama context yoksa proje hızla dağılır. Belirsiz "bunu kodla" istekleri duplicate modül, zayıf güvenlik, belirsiz mimari ve scope creep üretir.
 
-Bu repo su ihtiyaclari paketler:
+Bu repo şu ihtiyaçları paketler:
 
 - proje brief'i ve PRD,
 - teknik spec ve architecture docs,
 - implementation plan ve task listesi,
 - security, testing ve quality gates,
 - SaaS, cybersecurity, AI product, API, web, mobile, desktop, data product, internal tool ve library/CLI domain pack'leri,
-- `AGENTS.md`, `CLAUDE.md`, Cursor, Continue, Copilot, Devin/Windsurf, Aider ve Codex context dosyalari.
+- `AGENTS.md`, `CLAUDE.md`, Cursor, Continue, Copilot, Devin/Windsurf, Aider ve Codex context dosyaları.
 
-## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/26a1.svg" alt="" aria-hidden="true" width="20"> Hizli Basla
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/26a1.svg" alt="" aria-hidden="true" width="20"> Hızlı Başla
 
-| Sunu istiyorum... | Kullan |
+| Şunu istiyorum... | Kullan |
 | --- | --- |
-| Yeni AI-coded projeyi guvenli baslatmak | [Skill entrypoint](.agents/skills/ai-project-starter/SKILL.md) |
-| Modlari ve ornekleri gormek | [Usage guide](docs/USAGE.md) |
+| Yeni AI-coded projeyi güvenli başlatmak | [Skill entrypoint](.agents/skills/ai-project-starter/SKILL.md) |
+| Modları ve örnekleri görmek | [Usage guide](docs/USAGE.md) |
 | Skill'i kurmak/kopyalamak | [Install guide](docs/INSTALL.md) |
-| Skill yapisini incelemek | [Skill structure](docs/SKILL_STRUCTURE.md) |
-| Public repo guvenligini kontrol etmek | [Public repo checklist](docs/PUBLIC_REPO_CHECKLIST.md) |
-| Guvenlik modelini okumak | [Security model](docs/SECURITY_MODEL.md) |
+| Skill yapısını incelemek | [Skill structure](docs/SKILL_STRUCTURE.md) |
+| Public repo güvenliğini kontrol etmek | [Public repo checklist](docs/PUBLIC_REPO_CHECKLIST.md) |
+| Güvenlik modelini okumak | [Security model](docs/SECURITY_MODEL.md) |
 
 ## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9e9.svg" alt="" aria-hidden="true" width="20"> Ne Sunar?
 
-| Yetenek | Deger |
+| Yetenek | Değer |
 | --- | --- |
 | Proje context temeli | `README.md`, `PROJECT_BRIEF.md`, `PRODUCT_REQUIREMENTS.md`, `TECHNICAL_SPEC.md`, `ARCHITECTURE.md`, `IMPLEMENTATION_PLAN.md`, `TASKS.md` |
-| Agent instruction dosyalari | `AGENTS.md`, `CLAUDE.md`, Cursor, Continue, Copilot, Devin/Windsurf, Aider ve Codex context dosyalari |
+| Agent instruction dosyaları | `AGENTS.md`, `CLAUDE.md`, Cursor, Continue, Copilot, Devin/Windsurf, Aider ve Codex context dosyaları |
 | Enterprise starter | security, testing, observability, deployment, operations, risk register, ADR |
 | Domain pack'ler | SaaS, cybersecurity, AI product, API, web, mobile, desktop, data, internal tool, library/CLI |
 | Vibe coding guardrail | anti-slop, non-goals, milestone control, duplicate engelleme, verification-before-done |
-| Context audit/repair | zayif, eski, duplicate, celiskili veya eksik context dokumanlarini bulma ve duzeltme |
-| Template materializer | `scripts/create_starter.py` ile guvenli starter doc seti olusturma |
+| Context audit/repair | zayıf, eski, duplicate, çelişkili veya eksik context dokümanlarını bulma ve düzeltme |
+| Template materializer | `scripts/create_starter.py` ile güvenli starter doc seti oluşturma |
 
-## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f680.svg" alt="" aria-hidden="true" width="20"> Ornek Kullanim
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f680.svg" alt="" aria-hidden="true" width="20"> Örnek Kullanım
 
 ```text
 ai-project-starter skillini CREATE_FILES + ENTERPRISE_STARTER modunda kullan.
-Proje fikri: Tenant bazli takimlar, RBAC, audit log, AI destekli remediation planlama ve guvenli raporlama iceren SaaS siber guvenlik platformu.
+Proje fikri: Tenant bazlı takımlar, RBAC, audit log, AI destekli remediation planlama ve güvenli raporlama içeren SaaS siber güvenlik platformu.
 ```
 
 Sadece vibe coding guardrail:
 
 ```text
-VIBE_GUARDRAILS modunu kullan. Bu proje vibe coding sirasinda dagilmasin diye gerekli agent context ve quality gate dosyalarini hazirla.
+VIBE_GUARDRAILS modunu kullan. Bu proje vibe coding sırasında dağılmasın diye gerekli agent context ve quality gate dosyalarını hazırla.
 ```
 
 ## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9f0.svg" alt="" aria-hidden="true" width="20"> Desteklenen Modlar
@@ -109,18 +110,29 @@ VIBE_GUARDRAILS modunu kullan. Bu proje vibe coding sirasinda dagilmasin diye ge
 - `VIBE_GUARDRAILS`
 - `RESEARCH_BACKED`
 
-## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f6e1.svg" alt="" aria-hidden="true" width="20"> Public Guvenlik Kurallari
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f6e1.svg" alt="" aria-hidden="true" width="20"> Public Güvenlik Kuralları
 
-Bu repo sunlari icermemelidir:
+Bu repo şunları içermemelidir:
 
 - API key, token, credential, cookie, private key, certificate veya private URL,
-- musteri verisi veya sirket ici bilgi,
+- müşteri verisi veya şirket içi bilgi,
 - private system prompt,
-- proprietary proje detayi,
-- maskelenmemis log, screenshot, local path veya kisisel not.
+- proprietary proje detayı,
+- maskelenmemiş log, screenshot, local path veya kişisel not.
 
-Yayinlamadan once [docs/PUBLIC_REPO_CHECKLIST.md](docs/PUBLIC_REPO_CHECKLIST.md) kullanin.
+Yayınlamadan önce [docs/PUBLIC_REPO_CHECKLIST.md](docs/PUBLIC_REPO_CHECKLIST.md) kullanın.
+
+## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2705.svg" alt="" aria-hidden="true" width="20"> Doğrulama
+
+```powershell
+npm run check
+git diff --check
+gitleaks dir . --no-banner --redact
+git status --short --branch
+```
+
+`npm run check`, repo yapısını ve starter materializer dry-run smoke testini birlikte çalıştırır.
 
 ## <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2696.svg" alt="" aria-hidden="true" width="20"> Lisans
 
-MIT. Detaylar icin [LICENSE](LICENSE).
+MIT. Detaylar için [LICENSE](LICENSE).

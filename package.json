@@ -13,8 +13,9 @@
     "node": ">=18"
   },
   "scripts": {
-    "check": "npm run validate",
-    "validate": "node scripts/validate-ai-project-starter.mjs"
+    "check": "npm run validate && npm run smoke:starter",
+    "validate": "node scripts/validate-ai-project-starter.mjs",
+    "smoke:starter": "node scripts/smoke-starter.mjs"
   },
   "keywords": [
     "ai-project-starter",

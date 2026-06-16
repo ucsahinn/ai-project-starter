@@ -1,6 +1,8 @@
 # Source Map
 
-Checked: 2026-06-05
+Checked: 2026-06-16
+
+Codex-specific behavior was refreshed from the official Codex manual on 2026-06-16 for skills, AGENTS.md discovery, MCP, plugins, subagents, and permissions.
 
 Use this map when updating the skill or when generating context docs that depend on current tool behavior. Prefer primary/official sources. Treat articles, news, papers, and community discussions as secondary signals unless they document a risk pattern that official docs do not yet cover.
 

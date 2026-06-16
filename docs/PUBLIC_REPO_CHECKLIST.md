@@ -19,11 +19,14 @@ Use before committing or pushing.
 - [ ] Tool-specific claims are backed by official docs or clearly marked as lower confidence.
 - [ ] Security and quality rules do not claim guarantees.
 - [ ] README, SECURITY, CONTRIBUTING, CHANGELOG, and docs are consistent.
+- [ ] Localized READMEs do not contain stale English residue or legacy repo identity.
 
 ## Git Hygiene
 
 - [ ] `git status --short` reviewed.
 - [ ] Explicit files staged.
 - [ ] `git diff --cached` reviewed.
+- [ ] `npm run check` passed, including starter materializer dry-run smoke test.
+- [ ] `git diff --check` passed.
 - [ ] Secret scan run when available.
 - [ ] Remote branch verified after push.

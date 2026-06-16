@@ -11,7 +11,8 @@
 ## v0.2
 
 - [ ] Add more realistic example outputs for common project types.
-- [ ] Add validation fixtures for `scripts/create_starter.py`.
+- [x] Add a dry-run smoke test for `scripts/create_starter.py`.
+- [ ] Add rendered-output fixtures for `scripts/create_starter.py`.
 - [ ] Add optional JSON intake schema for project ideas.
 - [ ] Add a context audit sample report.
 

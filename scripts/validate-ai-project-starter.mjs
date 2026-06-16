@@ -82,6 +82,57 @@ const allowedOldNameFiles = new Set([
   "scripts/validate-ai-project-starter.mjs"
 ]);
 
+const localizedReadmeResidue = new Map([
+  [
+    "README.de.md",
+    [
+      "Public repository",
+      "Codex users starting context-heavy projects",
+      "Public repo authors who need a safe starter layout",
+      "Need public release",
+      "Clone the starter",
+      "Keep starter changes documentation-first",
+      "Update release notes when the public starter contract changes"
+    ]
+  ],
+  [
+    "README.es.md",
+    [
+      "Public repository",
+      "Codex users starting context-heavy projects",
+      "Public repo authors who need a safe starter layout",
+      "Need public release",
+      "Clone the starter",
+      "Keep starter changes documentation-first",
+      "Update release notes when the public starter contract changes"
+    ]
+  ],
+  [
+    "README.fr.md",
+    [
+      "Public repository",
+      "Codex users starting context-heavy projects",
+      "Public repo authors who need a safe starter layout",
+      "Need public release",
+      "Clone the starter",
+      "Keep starter changes documentation-first",
+      "Update release notes when the public starter contract changes"
+    ]
+  ],
+  [
+    "README.pt-BR.md",
+    [
+      "Public repository",
+      "Codex users starting context-heavy projects",
+      "Public repo authors who need a safe starter layout",
+      "Need public release",
+      "Clone the starter",
+      "Keep starter changes documentation-first",
+      "Update release notes when the public starter contract changes"
+    ]
+  ]
+]);
+
 for (const file of walk(root)) {
   const rel = slash(path.relative(root, file));
   if (!rel || rel.startsWith(".git/")) continue;
@@ -94,6 +145,11 @@ for (const file of walk(root)) {
     if (!allowedOldNameFiles.has(rel)) {
       for (const oldName of oldPrimaryNames) {
         if (text.includes(oldName)) errors.push(`${rel} still uses old primary identity: ${oldName}`);
+      }
+    }
+    if (localizedReadmeResidue.has(rel)) {
+      for (const phrase of localizedReadmeResidue.get(rel)) {
+        if (text.includes(phrase)) errors.push(`${rel} contains untranslated residue: ${phrase}`);
       }
     }
   }

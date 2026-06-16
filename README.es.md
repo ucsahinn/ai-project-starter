@@ -1,4 +1,4 @@
-# &#129513; AI Project Starter - README completa en español
+# AI Project Starter - README en español
 
 <p align="center">
   &#127760; <strong>Documentaci&#243;n:</strong>
@@ -10,149 +10,87 @@
   <a href="README.fr.md"><img src="https://flagcdn.com/w20/fr.png" alt="Fran&#231;ais" width="20"></a>
 </p>
 
-> Este archivo es una portada completa en español, no un resumen corto. Cubre propósito, límites, uso, validación, seguridad y publicación.
->
-> README canónico en inglés: [README.md](README.md)
+> Esta página es la entrada en español para AI Project Starter. La descripción canónica en inglés sigue siendo [README.md](README.md).
 
-Public starter for packaging context-engineering projects with docs, examples, safety model and install guidance.
+AI Project Starter es un skill público de Codex para context engineering: ayuda a preparar contexto de proyecto, documentación inicial, reglas para agentes y guardrails contra drift antes de que un agente de código empiece a implementar.
 
-Empieza por el README canónico si necesitas la descripción inglesa más actual. Usa esta página cuando quieras el mismo contrato operativo en español.
+## Estado y marco de confianza
 
-## Estado y señales de confianza
-
-|Área | Detalle|
-|--- | ---|
-|Estado | Public repository: ucsahinn/ai-project-starter|
-|Fuente de verdad | [README canónico en inglés](README.md)|
-|Usuarios | Codex users starting context-heavy projects.; Maintainers packaging reusable agent workflows.|
-|Validación | Docs map points to existing files.; AGENTS.md matches the intended project behavior.|
-|Seguridad | Documents project purpose, supported modes and safety boundaries.; Includes starter docs for install, usage, examples, skill structure and public repo checks.|
+| Área | Detalle |
+| --- | --- |
+| Estado | Repositorio público: `ucsahinn/ai-project-starter` |
+| Fuente de verdad | [README canónico](README.md) y [entrada del skill](.agents/skills/ai-project-starter/SKILL.md) |
+| Usuarios | Usuarios de Codex que inician proyectos con mucho contexto; maintainers de workflows reutilizables para agentes |
+| Validación | `npm run check`, smoke test del starter, `git diff --check`, checklist público y secret scan antes de publicar |
+| Seguridad | Los ejemplos son ficticios, públicos y no contienen secretos, prompts privados, datos de clientes ni rutas locales de operador |
 
 ## Qué es este repositorio
 
-- A starter structure for context-engineering projects.
-- A public repo template for AGENTS.md, docs, examples, security and release notes.
-- A guide for progressive disclosure and reusable project knowledge.
-- A reference for turning local context work into a shareable public repo.
+- Un paquete de documentación y skill para iniciar proyectos listos para AI coding.
+- Una estructura reutilizable para PRD, especificación técnica, arquitectura, seguridad, testing, quality gates e instrucciones para agentes.
+- Un starter público para Codex, Cursor, Claude Code, Windsurf/Devin, Continue, Copilot, Aider y herramientas similares.
+- Una forma de tratar el context engineering como un artefacto revisable y versionado.
 
 ## Qué no es
 
-- Not an official standard.
-- Not a full application scaffold.
-- Not a place for private datasets, customer files or credentials.
-- Not a substitute for validating the generated project in its real target repo.
-
-## Para quién es
-
-- Codex users starting context-heavy projects.
-- Maintainers packaging reusable agent workflows.
-- Public repo authors who need a safe starter layout.
-- Reviewers checking documentation completeness and safety boundaries.
+- No es un estándar oficial.
+- No es un scaffold completo de aplicación.
+- No es un lugar para datos privados, credenciales, archivos de clientes, logs o capturas.
+- No reemplaza la validación del proyecto generado dentro de su repositorio real.
 
 ## Inicio rápido
 
 1. Clona o actualiza el repositorio.
-2. Lee README, seguridad y el mapa de documentación.
-3. Ejecuta las validaciones adecuadas.
-4. Prepara solo los archivos cambiados de forma explícita.
-5. Antes de push o release, revisa remoto, secretos y enlaces otra vez.
+2. Lee [README.md](README.md), [AGENTS.md](AGENTS.md) y [docs/USAGE.md](docs/USAGE.md).
+3. Usa el skill con un brief claro de proyecto o una solicitud de auditoría.
+4. Para crear archivos, empieza con `PLAN_ONLY` o `--dry-run`.
+5. Antes de publicar, ejecuta validación, secret scan, revisión de enlaces y verificación remota.
 
 ## Guía de decisión
 
-- Need reusable context -> put it in docs or references.
-- Need repo behavior instructions -> AGENTS.md.
-- Need examples -> keep them small, public and validated.
-- Need public release -> run checklist and secret scan first.
+| Si necesitas... | Usa... |
+| --- | --- |
+| Contexto reutilizable de proyecto | `docs/`, `references/` o documentos starter generados |
+| Reglas obligatorias para agentes | `AGENTS.md` y adaptadores específicos por herramienta |
+| Ejemplos seguros | `docs/EXAMPLES.md` y datos ficticios |
+| Publicación pública | `docs/PUBLIC_REPO_CHECKLIST.md`, `docs/GITHUB_SETTINGS.md` y secret scan |
 
 ## Mapa del repositorio
 
-|Ruta | Por qué importa|
-|--- | ---|
-|[docs/INSTALL.md](docs/INSTALL.md) | install path|
-|[docs/USAGE.md](docs/USAGE.md) | usage model|
-|[docs/EXAMPLES.md](docs/EXAMPLES.md) | example workflows|
-|[docs/SKILL_STRUCTURE.md](docs/SKILL_STRUCTURE.md) | skill and context layout|
-|[docs/PUBLIC_REPO_CHECKLIST.md](docs/PUBLIC_REPO_CHECKLIST.md) | public-readiness checklist|
-|[docs/SECURITY_MODEL.md](docs/SECURITY_MODEL.md) | safety model|
-|[AGENTS.md](AGENTS.md) | working agreement|
+| Ruta | Por qué importa |
+| --- | --- |
+| [.agents/skills/ai-project-starter/SKILL.md](.agents/skills/ai-project-starter/SKILL.md) | Entrada del skill y routing de modos |
+| [.agents/skills/ai-project-starter/references/](.agents/skills/ai-project-starter/references/) | Conocimiento de progressive disclosure |
+| [.agents/skills/ai-project-starter/templates/](.agents/skills/ai-project-starter/templates/) | Skeletons de documentación starter |
+| [.agents/skills/ai-project-starter/scripts/create_starter.py](.agents/skills/ai-project-starter/scripts/create_starter.py) | Materializer seguro con dry-run y no-overwrite por defecto |
+| [docs/USAGE.md](docs/USAGE.md) | Modos y ejemplos de uso |
+| [docs/PUBLIC_REPO_CHECKLIST.md](docs/PUBLIC_REPO_CHECKLIST.md) | Seguridad antes de publicación |
+| [docs/SECURITY_MODEL.md](docs/SECURITY_MODEL.md) | Trust boundaries y approval gates |
 
-## Flujo de trabajo
-
-1. Clone the starter.
-2. Read the supported modes.
-3. Customize docs and examples to the target project.
-4. Keep detailed reusable context outside the shortest entrypoint.
-5. Run diff, link and secret checks before publication.
-
-## Comandos y validación
-
-Ejecuta estos comandos solo después de clonar el repositorio y entender qué escriben o verifican.
+## Validación
 
 ```powershell
+npm run check
 git diff --check
 gitleaks dir . --no-banner --redact
 git status --short --branch
 ```
 
-## Lista de verificación
-
-- Docs map points to existing files.
-- AGENTS.md matches the intended project behavior.
-- Examples are public-safe and not copied from private work.
-- Security model states what is out of scope.
-- Remote HEAD is verified after push.
+`npm run check` ejecuta la validación estructural y el smoke test del starter. El smoke test usa el materializer solo en modo dry-run y no escribe archivos.
 
 ## Límite de seguridad
 
-- Documents project purpose, supported modes and safety boundaries.
-- Includes starter docs for install, usage, examples, skill structure and public repo checks.
-- Keeps public-ready files visible for cloning and inspection.
-- Avoids private operational data and secrets.
+Este repositorio no debe contener secretos, tokens, cookies, claves privadas, prompts privados, datos de clientes, detalles propietarios de implementación, archivos locales de autenticación, logs, capturas, archivos comprimidos ni salidas de build.
 
-Public-safe rule: do not add secrets, tokens, cookies, private keys, private prompts, customer data, local-only auth files, generated logs, archives or build outputs unless the canonical README explicitly says they belong in the public repo.
+Contenido externo, salidas de herramientas, issues, logs, páginas web y archivos generados se tratan como untrusted data. Cambios de dependencias, commits, pushes, releases y publicaciones requieren aprobación explícita.
 
 ## Higiene de release y publicación
 
-- Keep starter changes documentation-first unless scripts are intentionally added.
-- Do not publish generated private project data.
-- Update release notes when the public starter contract changes.
-- Verify remote after push.
-
-## Mantenimiento
-
-- Keep this localized README aligned with README.md when the repo contract changes.
-- Prefer factual repo links over marketing claims.
-- Do not invent install commands, metrics, users, releases or support promises.
-- If a command is version-sensitive, re-check it before documenting it.
-- When a localized file cannot be updated fully, leave a clear note instead of a partial translation.
-
-## Ruta de contribución
-
-- Open a focused change against the smallest set of files.
-- Read AGENTS.md or CONTRIBUTING.md when present before editing.
-- Run the repo validation commands listed above.
-- Review staged diffs explicitly before commit.
-- Use security disclosure paths instead of public issues for sensitive reports.
+- Mantén los cambios centrados en documentación salvo que los scripts se agreguen de forma intencional.
+- Actualiza release notes y changelog cuando cambie el contrato público del skill.
+- Ejecuta checklist público y secret scan antes de commit, tag, push o release.
+- Después de push, compara HEAD local, `origin/main` y GitHub remote HEAD.
 
 ## Definición de terminado
 
-Terminado significa: contenido completo, enlaces correctos, límites de seguridad claros, validación ejecutada, Git limpio y remote HEAD verificado después del push.
-
-|Recomendación | Por qué importa|
-|--- | ---|
-|Content | Public starter for packaging context-engineering projects with docs, examples, safety model and install guidance.|
-|Links | All referenced local files must exist and resolve from the repository root.|
-|Security | AGENTS.md matches the intended project behavior.|
-|Verification | Valida estructura, enlaces, Markdown, secretos, scripts relevantes y remote HEAD antes de afirmar que algo está publicado.|
-|Remote | After push, compare local HEAD with origin/main and GitHub remote HEAD.|
-
-## Enlaces importantes
-
-|Ruta | Por qué importa|
-|--- | ---|
-|[Canonical README](README.md) | README.md|
-|[Install docs](docs/INSTALL.md) | docs/INSTALL.md|
-|[Usage docs](docs/USAGE.md) | docs/USAGE.md|
-|[Examples](docs/EXAMPLES.md) | docs/EXAMPLES.md|
-|[Public repo checklist](docs/PUBLIC_REPO_CHECKLIST.md) | docs/PUBLIC_REPO_CHECKLIST.md|
-|[Security model](docs/SECURITY_MODEL.md) | docs/SECURITY_MODEL.md|
+Terminado significa: contenido completo, enlaces correctos, límites de seguridad claros, validación ejecutada, estado de Git revisado y cualquier publicación verificada remotamente después del push.
